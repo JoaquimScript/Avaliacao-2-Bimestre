@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro ENEM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>Portal do Candidato - ENEM</header>
+
+<main>
+<div class="card">
+<h2>Cadastro</h2>
+
+<input id="nome" placeholder="Nome Completo">
+<input id="emailCad" placeholder="E-mail">
+<div id="emailCadErro" class="erro"></div>
+
+<input placeholder="Telefone">
+<input placeholder="Nome da Mãe">
+<input placeholder="Nome do Pai">
+<input placeholder="Rua/Avenida">
+<input placeholder="Número">
+<input placeholder="Cidade">
+<input placeholder="Estado">
+<input placeholder="País">
+
+<select>
+<option>Já concluí</option>
+<option>Estou cursando</option>
+</select>
+
+<select>
+<option>Pública</option>
+<option>Privada</option>
+</select>
+
+<input type="password" id="senhaCad" placeholder="Senha">
+<div id="senhaCadErro" class="erro"></div>
+
+<input type="password" id="confirmarSenha" placeholder="Confirmar Senha">
+<div id="confirmarErro" class="erro"></div>
+
+<button onclick="salvarCadastro()">Salvar Inscrição</button>
+<button onclick="window.location.href='index.html'">Voltar</button>
+</div>
+</main>
+
+<footer>© 2026 Portal ENEM</footer>
+<script src="script.js"></script>
+</body>
+</html>

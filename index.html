@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de login para o ENEM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal do Candidato - ENEM</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<header>Portal do Candidato - ENEM</header>
+
+<main>
+<div class="card">
+<h2>Login</h2>
+<input type="email" id="email" placeholder="E-mail">
+<div id="emailErro" class="erro"></div>
+
+<input type="password" id="senha" placeholder="Senha">
+<div id="senhaErro" class="erro"></div>
+
+<button onclick="validarLogin()">Entrar</button>
+<button onclick="window.location.href='cadastro.html'">Cadastrar Novo Usuário</button>
+</div>
+</main>
+
+<footer>© 2026 Portal ENEM</footer>
+<script src="script.js"></script>
 </body>
 </html>
