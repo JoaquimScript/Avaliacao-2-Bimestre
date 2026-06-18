@@ -1,53 +1,151 @@
 <!DOCTYPE html>
+
+<!-- Documento HTML5 -->
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cadastro ENEM</title>
-<link rel="stylesheet" href="style.css">
+
+    <!-- Permite caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nome exibido na aba -->
+    <title>Cadastro ENEM</title>
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<header>Portal do Candidato - ENEM</header>
 
-<main>
-<div class="card">
-<h2>Cadastro</h2>
+    <!-- Cabeçalho fixo -->
+    <header>
+        Portal do Candidato - ENEM
+    </header>
 
-<input id="nome" placeholder="Nome Completo">
-<input id="emailCad" placeholder="E-mail">
-<div id="emailCadErro" class="erro"></div>
+    <!-- Área principal -->
+    <main>
 
-<input placeholder="Telefone">
-<input placeholder="Nome da Mãe">
-<input placeholder="Nome do Pai">
-<input placeholder="Rua/Avenida">
-<input placeholder="Número">
-<input placeholder="Cidade">
-<input placeholder="Estado">
-<input placeholder="País">
+        <!-- Card do formulário -->
+        <div class="card">
 
-<select>
-<option>Já concluí</option>
-<option>Estou cursando</option>
-</select>
+            <!-- Título -->
+            <h2>Cadastro</h2>
 
-<select>
-<option>Pública</option>
-<option>Privada</option>
-</select>
+            <!-- Nome completo -->
+            <input
+                id="nome"
+                placeholder="Nome Completo">
 
-<input type="password" id="senhaCad" placeholder="Senha">
-<div id="senhaCadErro" class="erro"></div>
+            <!-- E-mail -->
+            <input
+                id="emailCad"
+                placeholder="E-mail">
 
-<input type="password" id="confirmarSenha" placeholder="Confirmar Senha">
-<div id="confirmarErro" class="erro"></div>
+            <!-- Mensagem de erro do e-mail -->
+            <div id="emailCadErro" class="erro"></div>
 
-<button onclick="salvarCadastro()">Salvar Inscrição</button>
-<button onclick="window.location.href='index.html'">Voltar</button>
-</div>
-</main>
+            <!-- Telefone -->
+            <input
+                placeholder="Telefone">
 
-<footer>© 2026 Portal ENEM</footer>
-<script src="script.js"></script>
+            <!-- Nome da mãe -->
+            <input
+                placeholder="Nome da Mãe">
+
+            <!-- Nome do pai -->
+            <input
+                placeholder="Nome do Pai">
+
+            <!-- Rua -->
+            <input
+                placeholder="Rua/Avenida">
+
+            <!-- Número -->
+            <input
+                placeholder="Número">
+
+            <!-- Cidade -->
+            <input
+                placeholder="Cidade">
+
+            <!-- Estado -->
+            <input
+                placeholder="Estado">
+
+            <!-- País -->
+            <input
+                placeholder="País">
+
+            <!-- Situação escolar -->
+            <select>
+
+                <option>
+                    Já concluí
+                </option>
+
+                <option>
+                    Estou cursando
+                </option>
+
+            </select>
+
+            <!-- Tipo de escola -->
+            <select>
+
+                <option>
+                    Pública
+                </option>
+
+                <option>
+                    Privada
+                </option>
+
+            </select>
+
+            <!-- Senha -->
+            <input
+                type="password"
+                id="senhaCad"
+                placeholder="Senha">
+
+            <!-- Erro da senha -->
+            <div id="senhaCadErro" class="erro"></div>
+
+            <!-- Confirmar senha -->
+            <input
+                type="password"
+                id="confirmarSenha"
+                placeholder="Confirmar Senha">
+
+            <!-- Erro de confirmação -->
+            <div id="confirmarErro" class="erro"></div>
+
+            <!-- Salvar inscrição -->
+            <button onclick="salvarCadastro()">
+                Salvar Inscrição
+            </button>
+
+            <!-- Voltar para login -->
+            <button onclick="window.location.href='index.html'">
+                Voltar
+            </button>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        © 2026 Portal ENEM
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
